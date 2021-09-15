@@ -39,32 +39,34 @@ p {
 .chiken,
 .beef,
 .sushi {
+    font-style: italic;
     position: relative;
     top: 0;
     left: 67%;
 }
 
 .container {
+    font-size: 5vmin;
     border: 1px solid rgb(94, 75, 75);
     background-color: rgb(181, 193, 204);
     margin: 1%;
-    height: 20%;
 }
 
 @media (min-width: 992px) {
     .container {
         width: 31.3%;
         float: left;
-        height: 22vw;
     }
 }
 
-@media (min-width: 765px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        font-size: 4vmin;
+    }
     .first,
     .second {
         width: 48%;
         float: left;
-        height: 25vw;
     }
     .third {
         width: 98%;
@@ -73,5 +75,18 @@ p {
     .sushi {
         width: 16.5%;
         left: 83.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        font-size: 4.5vmin;
+    }
+    .chiken,
+    .beef,
+    .sushi {
+        position: relative;
+        top: 0;
+        left: 67%;
     }
 }
